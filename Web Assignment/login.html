@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include Bootstrap CSS from a CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Set the background color */
+        }
+        .navbar {
+            background-color: #007BFF; /* Set the navbar background color */
+        }
+        .navbar-brand {
+            color: #fff; /* Set the navbar brand text color */
+        }
+        .navbar-nav .nav-link {
+            color: #fff; /* Set the navbar link text color */
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ccc; /* Set the navbar link text color on hover */
+        }
+        .container {
+            margin-top: 50px; /* Add margin to the container */
+        }
+        .img-fluid {
+            max-width: 100%; /* Make the image responsive */
+            height: auto;
+        }
+        form {
+            background-color: #fff; /* Set the form background color */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow to the form */
+        }
+        .form-group label {
+            font-weight: bold; /* Make the form labels bold */
+        }
+        .btn-primary {
+            background-color: #007BFF; /* Set the primary button background color */
+            border-color: #007BFF;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3; /* Set the primary button background color on hover */
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand mr-auto" href="#">My Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <img src="login.png" alt="HR image" class="img-fluid mb-3" />
+                <form>
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" class="form-control-sm" id="username" placeholder="Enter your username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control-sm" id="password" placeholder="Enter your password">
+                    </div>
+                    <button class="btn btn-primary mt-3" type="button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JavaScript from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
